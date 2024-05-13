@@ -24,5 +24,21 @@ $tweets = [
     ],
 ];
 
+$jsontweet = file_get_contents("tweets.json");
+/* Tiene dos argumentos, el primero que es la variable 
+y true por que por defecto lo transforma en un objeto. */
+
+$jsonArray = json_decode($jsontweet, true); // Lo alamacenamos en un variable
+
+
+
+
+/*esto para ver que pinta
+ print_r($jsonArray);
+exit;
+ */
+
+
 // Declaro el require
 require_once "index.html";
+
